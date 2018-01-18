@@ -7,8 +7,8 @@ def get_town_url
   page.css('table.Style20 a') .each do |node|
   node['href'] = node['href'][1..-1]
   town_url = "http://annuaire-des-mairies.com" + node['href']
-  puts town_url
   end
+end
 
 
 # def get_town_email
